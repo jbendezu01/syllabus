@@ -12,6 +12,7 @@ define void @print_integer(i32) #0 {
 }
 
 define i32 @main() #0 {
-  ; EMIT CODE FROM YOUR COMPILER HERE
-  ret i32 0
+  %t1 = add nsw i32 99, 22;
+  call void @print_integer(i32 %t1)
+ret i32 0
 }
